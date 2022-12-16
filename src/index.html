@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Insurance Calculator</title>
+  <link type="mage/x-icon" sizes="16x16" rel="icon" href="/img/favicon.png">
+  <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header Page -->
+  <header class="container py-14 px-8">
+    <h1 class="font-bold text-6xl text-darkBlue">Car Insurance Calculator</h1>
+    <h2 class="text-xl mx-2 mt-4">Find out how much you should be paying for your car insurance.</h2>
+  </header>
+  <!-- Main Section -->
+  <section class="container flex flex-col px-9 md:flex-row">
+    <!-- Form and Social Icons-->
+    <div class="">
+      <form action="" id="insurance-form">
+        <p class=" text-start mb-8 max-w-sm">Enter the brand, age and type of insurance below for your indicative car
+          insurance
+          cost.
+        </p>
+        <div class="relative inline-flex">
+          <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 412 232">
+            <path
+              d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+              fill="#648299" fill-rule="nonzero" />
+          </svg>
+          <select id="brand"
+            class="border mb-6 w-80 border-gray-300 rounded-sm text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
+            <option value="none">Choose a brand</option>
+            <option value="1">American</option>
+            <option value="2">Asian</option>
+            <option value="3">European</option>
+          </select>
+        </div>
+        <br>
+        <div class="relative inline-flex">
+          <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 412 232">
+            <path
+              d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+              fill="#648299" fill-rule="nonzero" />
+          </svg>
+          <select id="year"
+            class="border w-80 mb-6 border-gray-300 rounded-sm text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
+            <option value="none">Choose a year</option>
+          </select>
+        </div>
+        <div class="radio-toolbar">
+          <input type="radio" id="radioBasic" name="type" value="basic" checked>
+          <label for="radioBasic">Basic</label>
+          <input type="radio" id="radioComplete" name="type" value="complete">
+          <label for="radioComplete">Complete</label>
+        </div>
+        <div class="lds-roller" id="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <button type="submit" id="send-button"
+          class="bg-darkBlue text-white w-80 mt-8 py-2 hover:bg-lightBlue hover:text-white  transition duration-150 ease-in-out">FIND
+          OUT</button>  
+        <div id="result"></div>
+      </form>
+    </div>
+    <!-- Car image-->
+    <img src="/img/image.png" alt="" id="car-image">
+  </section>
+  <script src="/js/app.js"></script>
+
+</body>
+
+</html>
