@@ -128,3 +128,20 @@
 .normal{
   font-weight: 400;
 }
+
+/*Succes and Error message styles*/
+
+.message{
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 20rem;
+  color: white;
+  text-align: center;
+}
+.error{
+  background-color: red;
+}
+.succes{
+  background-color: #579FCA;
+}

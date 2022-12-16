@@ -60,13 +60,12 @@ UI.prototype.fillYears = () => {
 UI.prototype.showMessage = (message, type) => {
   const div = document.createElement('div');
   if (type === 'error') {
-    div.classList.add('bg-red-600');
+    div.classList.add('error');
 
   } else {
-    div.classList.add('bg-lightBlue');
+    div.classList.add('succes');
   }
   div.classList.add('message');
-  div.classList.add('mt-10', 'py-3', 'w-80', 'text-white', 'text-center');
   div.textContent = message;
   //insert into form
   const form = document.querySelector('#insurance-form');

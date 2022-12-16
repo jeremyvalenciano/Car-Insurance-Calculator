@@ -655,21 +655,6 @@ video {
   background-color: rgb(51 120 158 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-lightBlue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(87 159 202 / var(--tw-bg-opacity));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -690,21 +675,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
 }
 
 .pr-10 {
   padding-right: 2.5rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-start {
@@ -903,6 +879,25 @@ video {
 
 .normal{
   font-weight: 400;
+}
+
+/*Succes and Error message styles*/
+
+.message{
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 20rem;
+  color: white;
+  text-align: center;
+}
+
+.error{
+  background-color: red;
+}
+
+.succes{
+  background-color: #579FCA;
 }
 
 .hover\:border-gray-400:hover {
